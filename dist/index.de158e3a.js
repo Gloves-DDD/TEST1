@@ -1,39 +1,40 @@
 // functionality for showing/hiding the comments section
-const showHideBtn = document.querySelector(".show-hide");
-const commentWrapper = document.querySelector(".comment-wrapper");
-commentWrapper.style.display = "none";
-showHideBtn.onclick = function() {
-    let showHideText = showHideBtn.textContent;
+const $4fa36e821943b400$var$showHideBtn = document.querySelector(".show-hide");
+const $4fa36e821943b400$var$commentWrapper = document.querySelector(".comment-wrapper");
+$4fa36e821943b400$var$commentWrapper.style.display = "none";
+$4fa36e821943b400$var$showHideBtn.onclick = function() {
+    let showHideText = $4fa36e821943b400$var$showHideBtn.textContent;
     if (showHideText === "Show comments") {
-        showHideBtn.textContent = "Hide comments";
-        commentWrapper.style.display = "block";
+        $4fa36e821943b400$var$showHideBtn.textContent = "Hide comments";
+        $4fa36e821943b400$var$commentWrapper.style.display = "block";
     } else {
-        showHideBtn.textContent = "Show comments";
-        commentWrapper.style.display = "none";
+        $4fa36e821943b400$var$showHideBtn.textContent = "Show comments";
+        $4fa36e821943b400$var$commentWrapper.style.display = "none";
     }
 };
 // functionality for adding a new comment via the comments form
-const form = document.querySelector(".comment-form");
-const nameField = document.querySelector("#name");
-const commentField = document.querySelector("#comment");
-const list = document.querySelector(".comment-container");
-form.onsubmit = function(e) {
+const $4fa36e821943b400$var$form = document.querySelector(".comment-form");
+const $4fa36e821943b400$var$nameField = document.querySelector("#name");
+const $4fa36e821943b400$var$commentField = document.querySelector("#comment");
+const $4fa36e821943b400$var$list = document.querySelector(".comment-container");
+$4fa36e821943b400$var$form.onsubmit = function(e) {
     e.preventDefault();
-    submitComment();
+    $4fa36e821943b400$var$submitComment();
 };
-function submitComment() {
+function $4fa36e821943b400$var$submitComment() {
     const listItem = document.createElement("li");
     const namePara = document.createElement("p");
     const commentPara = document.createElement("p");
-    const nameValue = nameField.value;
-    const commentValue = commentField.value;
+    const nameValue = $4fa36e821943b400$var$nameField.value;
+    const commentValue = $4fa36e821943b400$var$commentField.value;
     namePara.textContent = nameValue;
     commentPara.textContent = commentValue;
-    list.appendChild(listItem);
+    $4fa36e821943b400$var$list.appendChild(listItem);
     listItem.appendChild(namePara);
     listItem.appendChild(commentPara);
-    nameField.value = "";
-    commentField.value = "";
+    $4fa36e821943b400$var$nameField.value = "";
+    $4fa36e821943b400$var$commentField.value = "";
 }
+
 
 //# sourceMappingURL=index.de158e3a.js.map
